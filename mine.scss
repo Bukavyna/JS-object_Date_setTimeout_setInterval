@@ -20,7 +20,8 @@ body {
 	position: relative;
 	width: 400px;
 	height: 400px;
-	background-color: cadetblue;
+	background-image: url("image/oclok.jpg");
+	background-size: cover;
 	border: 12px solid brown;
 	border-radius: 50%;
 	margin: 20px auto;
@@ -33,7 +34,6 @@ body {
 		width: 2px;
 		height: 183px;
 		background-color: white;
-		z-index: 2;
 	}
 
 	.minute-hand {
@@ -44,7 +44,6 @@ body {
 		width: 4px;
 		height: 167px;
 		background-color: white;
-		z-index: 1;
 	}
 
 	.hour-hand {
@@ -56,24 +55,4 @@ body {
 		height: 143px;
 		background-color: white;
 	}
-
-	.number3 {
-		top: 40%;
-		left: 47%;
-	}
-
-	.number6 {
-		top: 77%;
-	}
-
-	.number9 {
-		top: 23%;
-		left: -46%;
-	}
 }
-
-.numbers {
-	position: relative;
-	font-size: 25px;
-}
-
