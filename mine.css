@@ -3,55 +3,161 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  outline: none;
+  cursor: default;
 }
 
-body {
-  display: flex;
-  justify-content: center;
+/*Mechanical watch <!--Start-->*/
+.case {
   background-color: beige;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  padding: 50px;
 }
-
-.mechanical-watch {
+.case .mechanical-watch {
   text-align: center;
   font-family: Arial, sans-serif;
   position: relative;
   width: 400px;
   height: 400px;
-  background-image: url("image/oclok.jpg");
+  background: url("image/oclok.jpg") no-repeat center;
   background-size: cover;
   border: 12px solid brown;
   border-radius: 50%;
   margin: 20px auto;
 }
-.mechanical-watch .second-hand {
+.case .mechanical-watch .second-hand {
   position: absolute;
-  top: 1.5%;
+  top: 1%;
   left: 50%;
   transform-origin: 50% 100%;
   width: 2px;
-  height: 183px;
+  height: 49%;
   background-color: white;
 }
-.mechanical-watch .minute-hand {
+.case .mechanical-watch .minute-hand {
   position: absolute;
   top: 6%;
   left: 50%;
   transform-origin: 50% 100%;
   width: 4px;
-  height: 167px;
+  height: 44%;
   background-color: white;
 }
-.mechanical-watch .hour-hand {
+.case .mechanical-watch .hour-hand {
   position: absolute;
-  top: 12%;
+  top: 11.5%;
   left: 50%;
   transform-origin: 50% 100%;
   width: 6px;
-  height: 143px;
+  height: 38.5%;
   background-color: white;
 }
+
+/*Mechanical watch <!--End-->*/
+/*-----------------------------------*/
+/*-----------------------------------*/
+/*Timer Stopwatch <!--Start-->*/
+.timer-stopwatch {
+  width: 100%;
+  color: #056F90;
+  font-family: "Kumar One", serif;
+  background-color: #000110;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.display {
+  width: 100%;
+  height: 16vw;
+  color: #056F90;
+  background-color: #000314;
+  padding-top: 2vw;
+  border-top: #242F3E 1px solid;
+  border-bottom: #242F3E 1px solid;
+}
+
+.block-timer {
+  height: 13vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #000314;
+}
+
+.time {
+  font-size: 5vw;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 5vw;
+  height: 3vw;
+  line-height: 3vw;
+  color: #056F90;
+  background-color: #000314;
+  border: #242F3E 1px solid;
+  border-radius: 0.4vw;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid #056F90;
+}
+
+/*Timer <!--Start-->*/
+.display:nth-child(1) {
+  text-align: center;
+}
+.display:nth-child(1) .date {
+  margin: 0 auto;
+}
+
+/*Timer <!--End-->*/
+/*-----------------------------------*/
+/*Stopwatch <!--Start-->*/
+.display:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2vw 11vw;
+  margin: 20px 0;
+}
+.display:nth-child(2) #show_stopwatch {
+  width: 24vw;
+  height: 12vw;
+  background-color: #000314;
+}
+.display:nth-child(2) p {
+  height: 8vw;
+  border: #242F3E 1px solid;
+}
+.display:nth-child(2) .box-buttons {
+  position: relative;
+  letter-spacing: 0.6vw;
+}
+.display:nth-child(2) #show_stopwatch {
+  color: #056F90;
+  padding: 1vw;
+  border: #242F3E 1px solid;
+  resize: none;
+}
+.display:nth-child(2) #show_stopwatch::-webkit-scrollbar {
+  width: 0;
+}
+
+.display:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2vw 13vw;
+}
+.display:nth-child(3) .time {
+  line-height: 5vw;
+}
+.display:nth-child(3) span {
+  font-size: 1.5vw;
+}
+
+/*Countdown  <!--End-->*/
+/*Timer Stopwatch  <!--End-->*/
 
 /*# sourceMappingURL=mine.css.map */
